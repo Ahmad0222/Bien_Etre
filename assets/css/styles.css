@@ -395,7 +395,9 @@ section{
 }
 
 .home__scroll-arrow{
-  font-size: 1.5rem;
+  display: inline-block;
+  font-size: 1rem;
+  transform: rotate(45deg);
 }
 
 .home__scroll{
@@ -450,7 +452,7 @@ section{
 
 .services__icon{
   display: block;
-  font-size: 5rem;
+  font-size: 6rem;
   color: var(--first-color);
   margin-bottom: var(--mb-1);
 }
