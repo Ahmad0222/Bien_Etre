@@ -98,6 +98,9 @@ h1, h2, h3 {
   font-family: var(--title-font);
 }
 
+p{
+  font-size: 20px;
+}
 ul {
   list-style: none;
 }
@@ -117,6 +120,9 @@ input {
   font-size: var(--normal-font-size);
 }
 
+span{
+  font-size: var(--normal-font-size);
+}
 
 input {
   outline: none;
@@ -137,7 +143,7 @@ section{
 
 .section__subtitle{
   display: block;
-  font-size: var(--small-font-size);
+  font-size: 17px;
   margin-bottom: var(--mb-2-5);
 }
 
@@ -475,7 +481,41 @@ section{
 .services__button:hover .button__icon{
   transform: translateX(.25rem);
 }
+/*==================== TESTIMONIAL ====================*/
+.testimonial__data,
+.testimonial__header{
+  display: grid;
+}
+.testimonial__data{
+    justify-content: center;
+    text-align: center;
+    margin-bottom: var(--mb-1);
+}
+.testimonial__img{
+  transform: translate(1.5rem);
+  justify-content: center;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  margin-right: var(--mb-0-75);
+  margin-bottom: var(--mb-1);
+}
+.testimonial__name{
+    font-size: var(--h2-font-size);
+    font-weight: var(--font-semi-bold);
+}
+.testimonial__client{
+    font-size: var(--small-font-size);
+    color: var(--text-color-light);
+}
+.testimonial__description{
+    margin-bottom: var(--mb-2-5);
+    text-align: center;
+}
 
+.swiper-container .swiper-pagination-testimonial{
+    bottom: 0;
+}
 /*==================== CONTACT ME ====================*/
 .contact__container{
   grid-template-columns: 3fr 1fr;

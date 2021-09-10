@@ -10,6 +10,8 @@
         <!--=============== CSS ===============-->
         <link rel="stylesheet" href="assets/css/styles.css">
 
+        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
         <title>Bien-Etre</title>
     </head>
     <body>
@@ -69,7 +71,7 @@
                     <h1 class="section__title-about">About</h1>
                     <span class="section__subtitle-about">Our Inroduction</span>
                     <div class="about__watermark about__content grid">
-                        <div class="about__data">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam ullam suscipit hic voluptatum modi officia consequatur eveniet. Impedit culpa eaque aperiam! Ratione incidunt molestiae exercitationem tempora commodi earum, laboriosam amet odio, a, numquam laborum aliquid nisi doloribus? Fugiat, necessitatibus! Commodi eius tenetur esse, ratione distinctio cumque consectetur autem, nobis nesciunt dolore sit maxime libero magnam Ratione quod excepturi, velit adipisci facere amet odio aliquam enim cumque modi pariatur deserunt officia? Esse tenetur velit non vero in cumque ea eligendi reiciendis laboriosam, nesciunt vitae maxime facilis </div>
+                        <div class="about__data"> <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam ullam suscipit hic voluptatum modi officia consequatur eveniet. Impedit culpa eaque aperiam! Ratione incidunt molestiae exercitationem tempora commodi earum, laboriosam amet odio, a, numquam laborum aliquid nisi doloribus? Fugiat, necessitatibus! Commodi eius tenetur esse, ratione distinctio cumque consectetur autem, nobis nesciunt dolore sit maxime libero magnam Ratione quod excepturi, velit adipisci facere amet odio aliquam enim cumque modi pariatur deserunt officia? Esse tenetur velit non vero in cumque ea eligendi reiciendis laboriosam, nesciunt vitae maxime facilis </p></div>
                              <div class="about__img"><img src="./assets/img/about.png" alt=""></div>
                     </div>
                     <a href="" class="button">Read More <i class="uil uil-arrow-right button__icon-home"></i></a>
@@ -119,6 +121,81 @@
                 </span>
             </div>
             </section>
+
+            <!--==================== TESTIMONIAL ====================-->
+            <section class="testimonial section" >
+                <h2 class="section__title">Testimonial</h2>
+                <span class="section__subtitle">Our Client Sayings</span>
+
+                <div class="testimonial__container container swiper-container">
+                    <div class="swiper-wrapper">
+                        <!--==================== TESTIMONIAL 1 ====================-->
+                        <div class="testimonial__content swiper-slide">
+                            <div class="testimonial__data">
+                                <div class="testimonial__header">
+                                    <img src="assets/img/testimonial2.jpg" alt="" class="testimonial__img">
+                                    <div>
+                                        <h3 class="testimonial__name">Emma Smith</h3>
+                                        <!-- <span class="testimonial__client">Client</span> -->
+                                    </div>
+                                </div>
+                            </div>
+                        
+                            <p class="testimonial__description">"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id labore fugit, dignissimos quasi unde, repellendus et optio autem quis nesciunt illo beatae qui perferendis porro."</p>
+                        </div>
+
+                        <!--==================== TESTIMONIAL 2 ====================-->
+                        <div class="testimonial__content swiper-slide">
+                            <div class="testimonial__data">
+                                <div class="testimonial__header">
+                                    <img src="assets/img/testimonial2.jpg" alt="" class="testimonial__img">
+                                    <div>
+                                        <h3 class="testimonial__name">Emma Smith</h3>
+                                        <!-- <span class="testimonial__client">Client</span> -->
+                                    </div>
+                                </div>
+                            </div>
+                        
+                            <p class="testimonial__description">"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id labore fugit, dignissimos quasi unde, repellendus et optio autem quis nesciunt illo beatae qui perferendis porro."</p>
+                        </div>
+
+                        <!--==================== TESTIMONIAL 3 ====================-->
+                        <div class="testimonial__content swiper-slide">
+                            <div class="testimonial__data">
+                                <div class="testimonial__header">
+                                    <img src="assets/img/testimonial2.jpg" alt="" class="testimonial__img">
+                                    <div>
+                                        <h3 class="testimonial__name">Emma Smith</h3>
+                                        <!-- <span class="testimonial__client">Client</span> -->
+                                    </div>
+                                </div>
+                            </div>
+                        
+                            <p class="testimonial__description">"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id labore fugit, dignissimos quasi unde, repellendus et optio autem quis nesciunt illo beatae qui perferendis porro."</p>
+                        </div>
+
+                        <!--==================== TESTIMONIAL 4 ====================-->
+                        <div class="testimonial__content swiper-slide">
+                            <div class="testimonial__data">
+                                <div class="testimonial__header">
+                                    <img src="assets/img/testimonial2.jpg" alt="" class="testimonial__img">
+                                    <div>
+                                        <h3 class="testimonial__name">Emma Smith</h3>
+                                        <!-- <span class="testimonial__client">Client</span> -->
+                                    </div>
+                                </div>
+                            </div>
+                        
+                            <p class="testimonial__description">"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id labore fugit, dignissimos quasi unde, repellendus et optio autem quis nesciunt illo beatae qui perferendis porro."</p>
+                        </div>
+
+                        
+                    </div>
+                    <div class="swiper-pagination swiper-pagination-testimonial"></div>
+                </div>
+            </section>
+
+
             <!--==================== CONTACT ====================-->
             <section class="contact section" id="contact">
                 <h2 class="section__title">Contact Us</h2>
@@ -234,19 +311,19 @@
                     </div>
                     <ul class="footer__links">
                         <li>
-                            <a href="" class="footer__link">Home</a>
+                            <a href="#" class="footer__link">Home</a>
                         </li>
                         <li>
-                            <a href="" class="footer__link">About</a>
+                            <a href="#" class="footer__link">About</a>
                         </li>
                         <li>
-                            <a href="" class="footer__link">Services</a>
+                            <a href="#" class="footer__link">Services</a>
                         </li>
                         <li>
-                            <a href="" class="footer__link">Testimonials</a>
+                            <a href="#" class="footer__link">Testimonials</a>
                         </li>
                         <li>
-                            <a href="" class="footer__link">Contact</a>
+                            <a href="#" class="footer__link">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -257,7 +334,7 @@
         <a href="#" class="scrollup" id="scroll-up">
             <i class="ri-arrow-up-line scrollup__icon"></i>
         </a>
-
+        <script src="assets/js/swiper-bundle.min.js"></script>
         <!--=============== SCROLL REVEAL===============-->
         <script src="assets/js/scrollreveal.min.js"></script>
 

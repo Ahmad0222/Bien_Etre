@@ -38,6 +38,8 @@ function scrollHeader(){
 }
 window.addEventListener('scroll', scrollHeader)
 
+let swiperTestimonial = new Swiper(".testimonial__container", { loop: true, grabCursor: true, spaceBetween: 48, pagination: { el: ".swiper-pagination", clickable: true, dynamicBullets: true }, breakpoints: { 568: { slidesPerView: 1 } } });
+
 /*==================== SWIPER DISCOVER ====================*/
 let swiper = new Swiper(".discover__container", {
     effect: "coverflow",
