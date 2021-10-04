@@ -133,8 +133,8 @@ input {
 }
 
 /*=============== REUSABLE CSS CLASSES ===============*/
-section{
-  padding: 6rem 0 4rem;
+.section{
+  padding: 2rem 0 4rem;
 }
 
 .section__title{
@@ -149,7 +149,7 @@ section{
 
 .section__title,
 .section__subtitle{
-  text-align: center;
+  text-align: left;
 }
 
 .container {
@@ -297,8 +297,11 @@ section{
   height: calc(100vh - var(--header-height));
   align-content: center;
   row-gap: 3rem;
+  padding-top: 7rem;
 }
-
+.home{
+  padding-bottom: 3rem;
+}
 .home__data-title, 
 .home__data-subtitle {
   color: black;
@@ -446,7 +449,7 @@ section{
 }
 .about__img{
   width: 550px;
-  transform: translateX(6rem);
+  transform: translateX(8rem);
 }
 
 /*==================== SERVICES ====================*/
