@@ -187,7 +187,7 @@ input {
 .nav__logo {
   display: grid;
   transform: translateY(0.01rem);
-  width: 220px;
+  width: 260px;
 }
 
 .nav__toggle {
