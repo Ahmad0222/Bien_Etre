@@ -20,7 +20,7 @@
   --title-color: hsl(var(--hue-color), 64%, 18%);
   --text-color: hsl(var(--hue-color), 24%, 35%);
   --text-color-light: hsl(var(--hue-color), 8%, 60%);
-  --input-color: hsl(var(--hue-color), 24%, 97%);
+  --input-color: rgb(235, 235, 235);
   --body-color: hsl(var(--hue-color), 100%, 99%);
   --white-color: #FFF;
   --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
@@ -211,6 +211,9 @@ section{
     padding: 3rem;
     transition: .4s;
   }
+  .nav__logo{
+    width: 160px;
+  }
 }
 
 .nav__list {
@@ -283,7 +286,7 @@ section{
   width: 100%;
   height: 100vh;
   object-fit: cover;
-  object-position: 83%;
+  object-position: 48%;
 }
 
 .home__container {
@@ -294,26 +297,33 @@ section{
 }
 
 .home__data-title, 
-.home__info {
-  color: var(--first-color);
+.home__data-subtitle {
+  color: black;
 }
 
 .home__data-subtitle {
   display: block;
-  transform: translateY(-5rem);
-  font-weight: var(--font-semi-bold);
+  font-weight: var(--font-medium);
   margin-bottom: var(--mb-2-5);
 }
 
 .home__data-title {
   display: grid;
-  color: var(--first-color);
-  transform: translateY(-3.5rem);
-  font-size: var(--biggest-font-size);
+  font-size: 50px;
   font-weight: var(--body-font);
   margin-bottom: var(--mb-2-5);
 }
-
+.timings{
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+}
+.timing_title,
+.timing{
+  color: black;
+  font-weight: var(--font-medium);
+  font-size: 22px;
+}
 
 /*=============== BUTTONS ===============*/
 .button {
@@ -327,12 +337,11 @@ section{
 
 .button__home {
   display: inline-block;
-  transform: translateY(-4rem);
   background-color: var(--first-color);
   color: var(--white-color);
-  padding: 0.7rem 1.5rem;
+  padding: 0.5rem 1.5rem;
   transition: .3s;
-  border-radius: 50px;
+  border-radius: 8px;
 }
 
 .button:hover {
@@ -432,7 +441,7 @@ section{
   font-size: large;
 }
 .about__img{
-  width: 400px;
+  width: 550px;
   transform: translateX(6rem);
 }
 
@@ -444,7 +453,7 @@ section{
 
 .services__content{
   position: relative;
-  background-color: #BDD9E6;
+  background-color: #3760AA;
   padding: 1.5rem .5rem 1.25rem 1.5rem;
   border-radius: .25rem;
   /* box-shadow: -3px -3px 7px #ffffff73, 3px 3px 5px rgba(94, 104, 121, .288); */
@@ -459,27 +468,69 @@ section{
 .services__icon{
   display: block;
   font-size: 6rem;
-  color: var(--first-color);
+  color: white;
   margin-bottom: var(--mb-1);
 }
 
 .services__title{
+  color: #FFF;
   font-size: var(--h2-font-size);
   margin-bottom: var(--mb-1);
   font-weight: var(--font-medium);
 }
 .services__description{
+  color: #FFF;
   font-size: var(--normal-font-size);
   margin-bottom: var(--mb-1-25);
 }
 .services__button{
   cursor: pointer;
   font-size: var(--font-medium);
-  color: var(--first-color);
+  color: #FFF;
+}
+.overlay {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background: linear-gradient(
+        to right bottom,
+        rgba(255, 255, 255, 0.5),
+        rgba(255, 255, 255, 0.5)
+      );
+        backdrop-filter: blur(0.35rem);
+  overflow: hidden;
+  width: 100%;
+  height:0;
+  transition: .5s ease;
+  border-radius: 5px;
+  text-align: center;
+}
+.over_icon{
+  font-size: 10rem;
+  color: rgb(8, 8, 34);
+}
+.text,
+.coming_soon{
+  color: rgb(8, 8, 34);
+}
+.text{
+  font-size: 2rem;
+  transform: translateY(-1.5rem);
+}
+.coming_soon{
+  font-size: 3rem;
+  color: #FFF;
+}
+.services__content:hover .overlay {
+  bottom: 0;
+  height: 100%;
+  cursor: pointer;
 }
 
-.services__button:hover .button__icon{
-  transform: translateX(.25rem);
+.services__description-overlay{
+  color: #FFF;
+  font-size: 1.5rem;
 }
 /*==================== TESTIMONIAL ====================*/
 .testimonial__data,
@@ -537,8 +588,7 @@ section{
 }
 
 .contact__subtitle{
-  font-size: var(--small-font-size);
-  color: var(--text-color-light);
+  font-size: 20px;
 }
 
 .contact__content{
@@ -582,7 +632,7 @@ section{
   justify-content: center;
 }
 .footer__bg{
-  background-color: var(--first-color-second);
+  background-color: rgb(8, 8, 34);
   padding: 2rem 0 3rem;
   justify-content: center;
 }
@@ -605,7 +655,7 @@ section{
 }
 .email:hover,
 .footer__link:hover{
-  color: #BDD9E6;
+  color: var(--first-color);
 }
 
 
