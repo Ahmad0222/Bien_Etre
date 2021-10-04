@@ -214,6 +214,15 @@ section{
   .nav__logo{
     width: 160px;
   }
+  .about__content{
+    display: flex;
+    flex-direction: column;
+    flex-direction: column-reverse;
+  }
+  .services__container{
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .nav__list {
@@ -248,12 +257,6 @@ section{
 
 /* Change background header */
 .scroll-header {
-  background: linear-gradient(
-        to right bottom,
-        rgba(255, 255, 255, 0.5),
-        rgba(255, 255, 255, 0.5)
-      );
-        backdrop-filter: blur(0.35rem);
         box-shadow: 0 0 4px rgba(14, 55, 63, 0.15);
 }
 
@@ -420,6 +423,7 @@ section{
   justify-content: center;
 }
 /*=============== ABOUT ===============*/
+
 .section__title-about{
   font-size: var(--h1-font-size);
 }
@@ -435,7 +439,7 @@ section{
   text-align: left;
 }
 .about__content{
-  grid-template-columns: 2fr 2fr;
+  grid-template-columns: repeat(2, 1fr);
 }
 .about__data{
   font-size: large;
