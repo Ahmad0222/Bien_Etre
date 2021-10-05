@@ -211,18 +211,6 @@ input {
     padding: 3rem;
     transition: .4s;
   }
-  .nav__logo{
-    width: 160px;
-  }
-  .about__content{
-    display: flex;
-    flex-direction: column;
-    flex-direction: column-reverse;
-  }
-  .services__container{
-    display: flex;
-    flex-direction: column;
-  }
 }
 
 .nav__list {
@@ -289,7 +277,7 @@ input {
   width: 100%;
   height: 100vh;
   object-fit: cover;
-  object-position: 48%;
+  object-position: 45%;
 }
 
 .home__container {
@@ -696,22 +684,56 @@ input {
 
 /*=============== MEDIA QUERIES ===============*/
 /* For small devices */
-@media screen and (max-width: 340px) {
-
+@media screen and (min-width: 340px) {
+  
 }
 
 /* For medium devices */
-@media screen and (min-width: 568px) {
-  
-
+@media screen and (max-width: 568px) {
+  .nav__logo{
+    width: 180px;
+  }
+  .about__content{
+    display: flex;
+    flex-direction: column;
+    flex-direction: column-reverse;
+  }
+  .services__container{
+    display: flex;
+    flex-direction: column;
+  }
+  .home__img{
+    height: 110vh;
+  }
+  .about__img{
+    transform: translateX(3.3rem);
+    width: 450px;
+  }
+  .timings{
+    display: none;
+  }
+  .contact__container{
+    grid-template-columns: 1fr;
+  }
+  .services__icon{
+    font-size: 8rem;
+  }
+  .contact__inputs{
+    grid-template-columns: 1fr;
+  }
+  .contact__form{
+    width: auto;
+  }
+  .over_icon{
+    font-size: 20rem;
+  }
 }
-
 @media screen and (min-width: 768px) {
   body {
     margin: 0;
   }
   .nav {
-    height: calc(var(--header-height) + 1.5rem);
+    height: calc(var(--header-height) + 1rem);
   }
   .nav__link {
     color: var(--first-color);
@@ -720,33 +742,20 @@ input {
   .nav__link:hover {
     color: var(--text-color);
   }
-  .nav__dark {
-    position: initial;
-  }
   .nav__menu {
     display: flex;
-    column-gap: 1rem;
+    column-gap: 0.5rem;
   }
   .nav__list {
     flex-direction: row;
-    column-gap: 4rem;
+    column-gap: 2.5rem;
   }
   .nav__toggle, .nav__close {
     display: none;
   }
-  .change-theme-name {
-    display: none;
-  }
-  .change-theme {
-    color: var(--white-color);
-  }
   .active-link::before {
     background-color: var(--text-color);
   }
-
-  /* .section {
-    padding: 7rem 0 2rem;
-  } */
   .home__container {
     height: 100vh;
     grid-template-rows: 1.8fr .5fr;
@@ -756,6 +765,46 @@ input {
   }
   .home__info {
     bottom: 3rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .about__content{
+    display: flex;
+    flex-direction: column;
+    flex-direction: column-reverse;
+  }
+  .nav__logo{
+    width: 180px;
+  }
+  .home__container{
+    padding-top: 2rem;
+  }
+  .timings{
+    width: 80%;
+  }
+  .about__img{
+    width: 320px;
+    transform: translateX(1.5rem);
+  }
+  .section__title,
+  .section__title-about,
+  .section__subtitle-about,
+  .section__subtitle{
+    text-align: center;
+  }
+  .over_icon{
+    font-size: 6rem;
+  }
+  .text{
+    padding-top: 1rem;
+  }
+  .coming_soon{
+    font-size: 2rem;
+  }
+  .services__description-overlay{
+    font-size: 1.3rem;
+    padding: 0 5px;
+    transform: translateY(-0.5rem);
   }
 }
 
