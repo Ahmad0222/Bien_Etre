@@ -703,7 +703,7 @@ input {
     flex-direction: column;
   }
   .home__img{
-    height: 110vh;
+    height: 100vh;
   }
   .about__img{
     transform: translateX(3.3rem);
