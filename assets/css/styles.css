@@ -135,6 +135,7 @@ input {
 /*=============== REUSABLE CSS CLASSES ===============*/
 .section{
   padding: 2rem 0 4rem;
+  scroll-margin-top: 3rem;
 }
 
 .section__title{
