@@ -479,6 +479,11 @@ input {
   font-size: var(--normal-font-size);
   margin-bottom: var(--mb-1-25);
 }
+.services__description2{
+  color: #FFF;
+  font-size: var(--normal-font-size);
+  margin-bottom: 0.1rem;
+}
 .services__button{
   cursor: pointer;
   font-size: var(--font-medium);
