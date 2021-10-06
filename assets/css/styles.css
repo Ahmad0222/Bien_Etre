@@ -718,6 +718,7 @@ input {
   }
   .services__icon{
     font-size: 8rem;
+    margin-bottom: -0.5rem;
   }
   .contact__inputs{
     grid-template-columns: 1fr;
@@ -807,6 +808,7 @@ input {
     padding: 0 5px;
     transform: translateY(-0.5rem);
   }
+
 }
 
 /* For large devices */
