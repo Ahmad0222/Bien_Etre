@@ -188,7 +188,7 @@ input {
 .nav__logo {
   display: grid;
   transform: translateY(0.01rem);
-  width: 260px;
+  width: 280px;
 }
 
 .nav__toggle {
@@ -692,7 +692,7 @@ input {
 /* For medium devices */
 @media screen and (max-width: 568px) {
   .nav__logo{
-    width: 180px;
+    width: 220px;
   }
   .about__content{
     display: flex;
@@ -776,7 +776,7 @@ input {
     flex-direction: column-reverse;
   }
   .nav__logo{
-    width: 180px;
+    width: 220px;
   }
   .home__container{
     padding-top: 2rem;
