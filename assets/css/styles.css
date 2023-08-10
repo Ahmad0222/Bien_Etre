@@ -109,7 +109,7 @@ ul {
 
 a {
   text-decoration: none;
-  color: #007aff;
+  color: var(--first-color);
 }
 
 img {
@@ -505,7 +505,7 @@ input {
   text-align: center;
 }
 .over_icon {
-  font-size: 10rem;
+  font-size: 7rem;
   color: rgb(8, 8, 34);
 }
 .text,
@@ -852,4 +852,39 @@ input {
   .home__img {
     height: 640px;
   }
+}
+
+.clinic-table {
+  border-collapse: collapse;
+  margin: 25px 25px;
+  font-size: 1rem;
+  border-radius: 5px;
+  color: black;
+  border: 1px solid black;
+  padding: 5px 0;
+  transform: translateY(-1rem);
+}
+
+.clinic-table li {
+  padding: 5px;
+  text-align: center;
+  border-bottom: 1px solid black;
+}
+
+.clinic-table li:last-child {
+  border-bottom: none;
+}
+
+.collection_table {
+  overflow-y: scroll;
+  height: 150px;
+}
+
+.collection_table::-webkit-scrollbar {
+  width: 0.2rem;
+  background-color: var(--scroll-bar-color);
+}
+
+.collection_table::-webkit-scrollbar-thumb {
+  background-color: var(--scroll-thumb-color);
 }
