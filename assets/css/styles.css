@@ -882,9 +882,10 @@ input {
 
 .collection_table::-webkit-scrollbar {
   width: 0.2rem;
-  background-color: var(--scroll-bar-color);
+  background-color: transparent;
 }
 
 .collection_table::-webkit-scrollbar-thumb {
   background-color: var(--scroll-thumb-color);
+  border-radius: 25px;
 }
