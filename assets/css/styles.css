@@ -779,6 +779,12 @@ input {
   .nav__logo {
     width: 220px;
   }
+  .home__data-title {
+    font-size: 1.7rem;
+  }
+  .home__data-subtitle {
+    font-size: 1.2rem;
+  }
   .home__container {
     padding-top: 2rem;
   }
