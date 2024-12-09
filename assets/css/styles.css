@@ -710,6 +710,18 @@ input {
     transform: translateX(3.3rem);
     width: 450px;
   }
+
+  .order-img img {
+    width: 320px !important;
+  }
+
+  .team__container {
+    grid-template-columns: 1fr !important;
+  }
+
+  .team__contact {
+    text-align: center;
+  }
   .timings {
     display: none;
   }
