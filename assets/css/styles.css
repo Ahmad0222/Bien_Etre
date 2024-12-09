@@ -895,3 +895,29 @@ input {
   background-color: var(--scroll-thumb-color);
   border-radius: 25px;
 }
+
+.presc-upload {
+  padding: 10px 0;
+}
+
+.presc-upload {
+  margin: 10px 0;
+  padding: 1.5rem;
+  border: 2px dashed var(--title-color);
+  border-radius: 10px;
+  background-color: var(--body-color);
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+.presc-upload:hover {
+  background-color: var(--scroll-bar-color);
+}
+
+.order-img {
+  width: 600px !important;
+}
+
+.hidden {
+  display: none;
+}
