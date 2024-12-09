@@ -439,8 +439,8 @@ input {
   font-size: large;
 }
 .about__img {
-  width: 550px;
-  transform: translateX(8rem);
+  width: 450px;
+  transform: translateX(-3rem);
 }
 
 /*==================== SERVICES ====================*/
@@ -914,10 +914,46 @@ input {
   background-color: var(--scroll-bar-color);
 }
 
-.order-img {
-  width: 600px !important;
+.order-img img {
+  width: 400px;
+  max-width: 600px;
 }
 
 .hidden {
   display: none;
+}
+
+.team__container {
+  gap: 1.5rem;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.team__content {
+  padding: 2.5rem 1rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px,
+    rgba(17, 17, 26, 0.1) 0px 0px 8px;
+}
+
+.team__title {
+  font-size: 1.5rem;
+  font-weight: var(--font-semi-bold);
+  margin-bottom: var(--mb-0-5);
+}
+
+.team__description {
+  font-size: var(--small-font-size);
+  margin-bottom: var(--mb-1);
+}
+
+.team__contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 0.5rem;
+  margin-top: var(--mb-2-5);
 }
