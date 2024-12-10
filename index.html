@@ -315,7 +315,30 @@
                     </div>
                 </div>
                 <!--==================== SERVICES 3 ====================-->
-                <div class="services__content ">
+                <div class="services__content">
+                    <script>
+                        document.querySelectorAll('.services__content').forEach(item => {
+                            if (window.innerWidth <= 768) { // Check if the screen width is 768px or less
+                                item.addEventListener('click', event => {
+                                    const overlay = item.querySelector('.overlay');
+                                    if (overlay) {
+                                        if (overlay.style.bottom === '0') {
+                                            overlay.style.bottom = '-100%';
+                                            overlay.style.height = '0';
+                                        }
+                                        else {
+                                            document.querySelectorAll('.overlay').forEach(overlay => {
+                                                overlay.style.bottom = '-100%';
+                                                overlay.style.height = '0';
+                                            });
+                                            overlay.style.bottom = '0';
+                                            overlay.style.height = '100%';
+                                        }
+                                    }
+                                });
+                            }
+                        });
+                    </script>
                     <div>
                         <i class="uil uit-microscope services__icon"></i>
                         <h3 class="services__title">Collection</h3>
